@@ -1,0 +1,21 @@
+.fab {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 52px;
+  padding: 0 20px;
+  border-radius: 26px;
+  background: var(--cor-whats);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 2px 0 var(--cor-petroleo);
+  transition: background-color 0.2s;
+}
+.fab:hover {
+  background: var(--cor-whats-escuro);
+}

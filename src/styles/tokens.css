@@ -1,0 +1,24 @@
+/* Único lugar com cores e tipografia. Trocar a marca = mexer só aqui. */
+:root {
+  --cor-gelo: #f4f7f6;
+  --cor-papel: #ffffff;
+  --cor-petroleo: #0c2b33;
+  --cor-petroleo-suave: #3f5a62;
+  --cor-linha: #c9d6d3;
+  --cor-ambar: #f2a516;
+  --cor-ambar-claro: #fce9be;
+  --cor-whats: #117a3f;
+  --cor-whats-escuro: #0d6133;
+
+  --fonte-titulo: var(--font-titulo), "Arial Narrow", Arial, sans-serif;
+  --fonte-texto: var(--font-texto), Arial, sans-serif;
+
+  --texto-base: 1.0625rem;
+  --texto-pequeno: 1rem;
+  --linha-texto: 1.6;
+
+  --raio: 10px;
+  --toque: 44px;
+  --largura: 68rem;
+  --gutter: 16px;
+}

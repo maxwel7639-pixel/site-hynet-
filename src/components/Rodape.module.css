@@ -1,0 +1,43 @@
+.rodape {
+  background: var(--cor-petroleo);
+  color: var(--cor-gelo);
+  padding: 40px 0 88px;
+}
+.wrap {
+  max-width: var(--largura);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+.nome {
+  font-family: var(--fonte-titulo);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.lista {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+}
+.lista li {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-height: var(--toque);
+}
+.link {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--toque);
+  color: var(--cor-ambar);
+  text-underline-offset: 4px;
+}
+.lista :global([data-placeholder]) {
+  color: var(--cor-petroleo);
+}
+.rodape :focus-visible {
+  outline-color: var(--cor-gelo);
+  box-shadow: 0 0 0 6px var(--cor-ambar);
+}

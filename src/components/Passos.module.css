@@ -1,0 +1,36 @@
+.lista {
+  list-style: none;
+  margin: 24px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 24px;
+}
+.passo {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+.num {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--cor-petroleo);
+  color: var(--cor-gelo);
+  font-family: var(--fonte-titulo);
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.nome {
+  font-size: 1.375rem;
+  margin-bottom: 4px;
+}
+
+@media (min-width: 900px) {
+  .lista {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}

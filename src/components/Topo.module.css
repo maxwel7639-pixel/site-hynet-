@@ -1,0 +1,60 @@
+.topo {
+  background: var(--cor-gelo);
+}
+.wrap {
+  max-width: var(--largura);
+  margin: 0 auto;
+  padding: 8px var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 8px;
+  flex-wrap: wrap;
+}
+.marca {
+  font-family: var(--fonte-titulo);
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--toque);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.link {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--toque);
+  padding: 0 6px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.zap {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--toque);
+  padding: 0 12px;
+  border-radius: var(--raio);
+  background: var(--cor-whats);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+.zap:hover {
+  background: var(--cor-whats-escuro);
+}
+
+@media (min-width: 900px) {
+  .nav {
+    gap: 16px;
+  }
+}

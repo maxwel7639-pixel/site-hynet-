@@ -1,0 +1,17 @@
+.pagina {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 16px var(--gutter) 48px;
+  display: grid;
+  gap: 16px;
+}
+.voltar {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--toque);
+  font-weight: 700;
+}
+.titulo {
+  font-size: clamp(2rem, 8vw, 3rem);
+  font-weight: 800;
+}

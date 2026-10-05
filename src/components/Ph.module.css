@@ -1,0 +1,7 @@
+.ph {
+  background: var(--cor-ambar-claro);
+  border: 1px dashed var(--cor-petroleo);
+  border-radius: 4px;
+  padding: 0 6px;
+  font-style: normal;
+}

@@ -1,0 +1,60 @@
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: var(--toque);
+  padding: 12px 20px;
+  border-radius: var(--raio);
+  font-family: var(--fonte-texto);
+  font-weight: 700;
+  font-size: var(--texto-base);
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.bloco {
+  display: flex;
+  width: 100%;
+}
+
+.whats {
+  background: var(--cor-whats);
+  color: #fff;
+}
+.whats:hover {
+  background: var(--cor-whats-escuro);
+}
+
+.contorno {
+  border: 2px solid var(--cor-petroleo);
+  color: var(--cor-petroleo);
+  background: transparent;
+}
+.contorno:hover {
+  background: var(--cor-petroleo);
+  color: var(--cor-gelo);
+}
+
+/* O fio de luz chega no botão: um anel de luz, uma vez só. */
+.pulsa {
+  animation: chegada 1.2s ease-out 1.7s 1 both;
+}
+
+@keyframes chegada {
+  0% {
+    box-shadow: 0 0 0 0 var(--cor-ambar);
+  }
+  100% {
+    box-shadow: 0 0 0 14px rgba(242, 165, 22, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulsa {
+    animation: none;
+  }
+}
